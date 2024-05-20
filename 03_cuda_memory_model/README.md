@@ -16,7 +16,7 @@
 
 ## 内存结构层次
 > 查看gpu内存使用情况
-> nvcc --resource-usage hello.cu -o hello -arch=sm_61  sm_61(计算能力)
+> `nvcc --resource-usage hello.cu -o hello -arch=sm_61`  sm_61(计算能力)
 
 ![内存结构层次01](./images/内存结构层次01.png)
 
