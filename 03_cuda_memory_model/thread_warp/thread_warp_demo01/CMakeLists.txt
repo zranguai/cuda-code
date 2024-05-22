@@ -1,0 +1,1 @@
+add_executable(threadWarp_divergence threadWarp_divergence.cu)
