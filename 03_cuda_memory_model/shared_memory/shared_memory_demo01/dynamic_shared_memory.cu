@@ -7,6 +7,7 @@
 #include <iostream>
 #include "common.cuh"
 
+// 动态声明只支持一维数组
 extern __shared__ float s_array[];
 
 

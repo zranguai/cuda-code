@@ -14,6 +14,9 @@ __global__ void kernel_1(float* d_A, const int N)
     const int bid = blockIdx.x;
     const int n = bid * blockDim.x + tid;
     __shared__ float s_array[32];
+    // 静态共享内存可支持二维数组
+    // size_x = 32; size_y= 32;
+    // __shared__ float a[size_x][size_y]  // size_x, size_y需要编译时确定不能是变量
 
     if (n < N)
     {
