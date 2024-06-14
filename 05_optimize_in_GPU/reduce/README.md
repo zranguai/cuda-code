@@ -1,5 +1,7 @@
 # 深入浅出GPU优化系列：reduce优化
 
+> reduce是访存密集型的算子
+
 本篇文章主要是介绍**如何对GPU中的reduce算法进行优化**。目前针对reduce的优化，Nvidia的官方文档[reduce优化](https://developer.download.nvidia.com/assets/cuda/files/reduction.pdf)已经说得比较详细，但是过于精简，很多东西一笔而过。对于初入该领域的新人而言，理解起来还是较为费劲。因而在官方文档的基础，进行更深入地说明和讲解，尽可能地让每一个读者通过此文都能彻底地了解reduce的优化技术。
 
 ## 前言
